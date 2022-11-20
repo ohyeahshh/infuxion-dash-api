@@ -22,6 +22,11 @@ app.use(express.json())
 
 mongoose.connect(process.env.DATABASE_URI)
 
+app.get('/', (req,res) =>{
+
+		res.send("Api is running fine.);
+})
+
 app.get('/getRegisteredUsers', (req,res) =>{
 
 	User.find({}).then((users) =>{
