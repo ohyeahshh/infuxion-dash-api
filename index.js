@@ -24,7 +24,7 @@ mongoose.connect(process.env.DATABASE_URI)
 
 app.get('/', (req,res) =>{
 
-		res.send("Api is running fine.);
+		res.send("Api is running fine.");
 })
 
 app.get('/getRegisteredUsers', (req,res) =>{
